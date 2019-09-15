@@ -1,8 +1,16 @@
 import React from 'react';
-import './App.css';
 import quotes from './quotes.json';
-import Button from './Components/Button';
-import TweetThis from './Components/TweetThis'
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
+import 'typeface-roboto';
+import { Typography } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
+
+
+const appStyles = {
+    height: '100vh',
+    textAlign: 'center'
+}
 
 
 class App extends React.Component{
@@ -19,6 +27,7 @@ class App extends React.Component{
     this.newQuote       = this.newQuote.bind(this);
   }
 
+  
   getRandomQuote() {
     if(!quotes.length) {
       return;
@@ -40,13 +49,19 @@ class App extends React.Component{
   
   render(){
     return (
-      <div className="App" >
-        <div id="quote-box" style={{backgroundColor: this.state.color}} >
-          <div id="text">{`"${this.state.quote.quote}"`}</div>
-          <div id="author">{`- ${this.state.quote.author}`}</div>
-          <TweetThis elementId='tweet-quote' buttonDisplayName='Tweet this' tweetText={this.state.quote.quote}/>
-          <Button elementId="new-quote" buttonDisplayName="New quote" clickHandler={this.newQuote}/>
-        </div>
+      <div style={appStyles} className="App" >
+        <Grid md={6} alignItems='center' id="quote-box" style={{backgroundColor: this.state.color}} >
+          <Grid item>
+          <Typography>
+            <div id="text">{`"${this.state.quote.quote}"`}</div>
+            <div id="author">{`- ${this.state.quote.author}`}</div>
+          </Typography>
+          <Button>
+            <Link href={`https://twitter.com/intent/tweet?text=${this.state.quote.quote}&hashtags=quote`} className='twitter-share-button' id='tweet-quote'>Tweet this</Link>
+          </Button>
+          <Button id='new-quote' onClick={this.newQuote}>New quote</Button>
+          </Grid>
+        </Grid>
       </div>
     );
   }
