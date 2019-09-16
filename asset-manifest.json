@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/random-quote/static/css/main.34de6062.chunk.css",
+    "main.js": "/random-quote/static/js/main.8960a10a.chunk.js",
+    "main.js.map": "/random-quote/static/js/main.8960a10a.chunk.js.map",
+    "runtime~main.js": "/random-quote/static/js/runtime~main.040a351c.js",
+    "runtime~main.js.map": "/random-quote/static/js/runtime~main.040a351c.js.map",
+    "static/css/2.97438235.chunk.css": "/random-quote/static/css/2.97438235.chunk.css",
+    "static/js/2.e1575663.chunk.js": "/random-quote/static/js/2.e1575663.chunk.js",
+    "static/js/2.e1575663.chunk.js.map": "/random-quote/static/js/2.e1575663.chunk.js.map",
+    "index.html": "/random-quote/index.html",
+    "precache-manifest.290cc2e8c27fca60052729782435ed6c.js": "/random-quote/precache-manifest.290cc2e8c27fca60052729782435ed6c.js",
+    "service-worker.js": "/random-quote/service-worker.js",
+    "static/css/2.97438235.chunk.css.map": "/random-quote/static/css/2.97438235.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/random-quote/static/css/main.34de6062.chunk.css.map",
+    "static/media/index.css": "/random-quote/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  }
+}
