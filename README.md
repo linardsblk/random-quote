@@ -9,3 +9,6 @@ Project was initialized by using `npx create-react-app` command. Deleted the def
 ### Libraries used
 * [Material.ui](https://material-ui.com/)
 * [Styled components](https://www.styled-components.com/)
+
+
+**[View here](https://linardsblk.github.io/random-quote/)**
